@@ -9,6 +9,8 @@
     quidem, ipsum similique. Maiores inventore atque sit eaque molestiae velit
     quia non!
   </p>
+  <a href="/guides">View Guides</a>
+  <a href="/">Home</a>
 </div>
 
 <style>

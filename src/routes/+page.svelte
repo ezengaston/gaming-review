@@ -9,6 +9,8 @@
     magnam corporis excepturi non, dolor officia sapiente iste sequi inventore
     illum sint? Illum soluta tempore rerum officia voluptate.
   </p>
+  <a href="/guides">View Guides</a>
+  <a href="/about">About</a>
 </div>
 
 <style>
