@@ -1,4 +1,5 @@
 import axios from "axios";
+import { error } from "@sveltejs/kit";
 
 export async function load(event) {
   try {
@@ -9,9 +10,6 @@ export async function load(event) {
       guides: data,
     };
   } catch (e) {
-    return {
-      status: e.status,
-      error: new Error("Could not fetch the guides"),
-    };
+    throw error(e.response.status, "Could not fetch the guides");
   }
 }

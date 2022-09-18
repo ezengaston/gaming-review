@@ -1,4 +1,5 @@
 import axios from "axios";
+import { redirect } from "@sveltejs/kit";
 
 export async function load({ params }) {
   try {
@@ -11,9 +12,6 @@ export async function load({ params }) {
       guide: data,
     };
   } catch (e) {
-    return {
-      status: e.status,
-      error: new Error("Could not fetch the guide"),
-    };
+    throw redirect(307, "/guides");
   }
 }
